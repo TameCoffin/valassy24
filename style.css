@@ -51,11 +51,18 @@ body{
 .logo-head{
     font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)) );
     /* border: 1px solid; */
-    margin-top: 90px;
+    /* margin-top: 90px; */
     /* margin-right: 40px; */
     font-weight: 600;
     line-height: .9;
     color: black;
+}
+
+@media (min-width: 992px ){
+    .logo-head{
+        align-content: end;
+        line-height: 1;
+    }
 }
 @media (min-width: 1400px){
     .logo-head{
@@ -208,7 +215,7 @@ section{
 
 #locationSection{
     background-color: #6C3A6E;
-    height: 750px;
+    height: 760px;
 }
 @media (min-width: 992px) {
     #locationSection{
