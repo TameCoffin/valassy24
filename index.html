@@ -13,7 +13,7 @@
 <body>
     <header class="header" id="header">
         <div class="container">
-            <div class="row">
+            <div class="row header-row">
                 <div class="col-md-2 col-xxl space"></div>
                 <div class="col-md-4 col-xxl-5">
                     <div class="logo-div" id="topLogo">
@@ -49,7 +49,7 @@
                       <li><a class="dropdown-item nav-list-link locations-link careers-link" href="error.html">careers</a></li>
                       <li><a class="dropdown-item nav-list-link culture-link sign-in-link" href="error.html">sign in</a></li>
                     </ul>
-                  </div>
+                </div>
                 <div class="d-none d-md-block col-md-5 col-xxl-6 mt-5">
                     <nav class="nav justify-content-end" id="topNav">
                         <ul class="nav-list" id="navList">
@@ -60,8 +60,18 @@
                                 <a href="error.html" class="nav-list-link call-admiss-link">call admissions</a>
                             </li>
                             <li class="nav-list-item line-break"></li>
-                            <li class="nav-list-item programs">
-                                <a href="error.html" class="nav-list-link programs-link">programs</a>
+                            <li class="nav-list-item programs dropdown">
+                                <a href="#" class="nav-list-link programs-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">programs</a>
+                                <ul class="dropdown-menu" id="sub-menu">
+                                    <li class="sub-menu-list-item dropdown-item">
+                                        <a href="cosmetology.html" class="sub-menu-link">
+                                        Cosmetology</a>
+                                    </li>
+                                    <li class="sub-menu-list-item dropdown-item"> 
+                                        <a href="esthetician.html" class="sub-menu-link">
+                                        Esthetician</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-list-item locations">
                                 <a href="error.html" class="nav-list-link locations-link">locations</a>
@@ -95,54 +105,81 @@
         </div>
     </header>
     <main class="main" id="main">
-        <div class="col">
-            <a href="apply.html" class="enroll text-decoration-underline">Enroll in our upcoming classes
+        <div class="col enroll">
+            <p class="tagline text-uppercase">shaping futures</p>
+            <a href="apply.html" class="enroll-link">Enroll in our upcoming classes
             </a>
         </div>
         <div class="container">
+            <!-- <div class="learn-more-side rotate-90 fixed btn text-capitalize">learn more</div> -->
+            <div class="learn-more-side rotate-90 fixed-left btn text-capitalize d-none d-md">tour valassy</div>
             <section class="section d-none d-md-flex" id="banner">
                 <img src="media/bannerMd.png" alt="Valassy banner image" class="img-fluid image banner">
             </section>
             <section class="section mobile d-md-none">
                 <img src="media/bannerMobile.png" alt="" class="img img-fluid">
             </section>
-            <section class="section d-flex d-md-flex" id="cspf">
+            <section class="section grant-section">
                 <div class="container">
-                    <div class="row cspf">
-                        <div class="col-md-3 culture-div">
+                    <div class="row grant-row">
+                        <div class="col col-md-7 grant">
+                            <a href="#" class="grant-link">
+                                student grant fund information
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
+                                    <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col col-md-4 safety">
+                            <a href="#" class="safety-link">
+                                safety protocol
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
+                                    <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section d-flex" id="cspf">
+                <div class="container">
+                    <div class="row cspf d-block d-md-flex">
+                        <div class="col culture-div">
                             <figure class="figure culture" id="culture-figure">
                                 <a href="error.html" class="culture-link">
-                                    <img src="media/2.png" alt="placeholder" class="img-fluid image">
+                                    <img src="media/Culture_Approved.png" width="295" alt="placeholder" class="img-fluid image">
                                 </a>
                                 <figcaption class="figcaption culture-caption">
                                     culture
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="col-md-3 student-life-div">
+                        <div class="col student-life-div">
                             <figure class="figure student-life" id="student-life-figure">
                                 <a href="error.html" class="student-life-link">
-                                    <img src="media/3.png" alt="placeholder" class="img-fluid image">
+                                    <img src="media/3.png" width="295" alt="placeholder" class="img-fluid image">
                                 </a>
                                 <figcaption class="figcaption student-life-caption">
                                     student life
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="col-md-3 programs-div">
+                        <div class="col programs-div">
                             <figure class="figure programs" id="programs-figure">
                                 <a href="error.html" class="programs-link">
-                                    <img src="media/4.png" alt="placeholder" class="img-fluid image">
+                                    <img src="media/4.png" width="295" alt="placeholder" class="img-fluid image">
                                 </a>
                                 <figcaption class="figcaption programs-caption">
                                     programs
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="col-md-3 future-div">
+                        <div class="col future-div">
                             <figure class="figure future" id="future-figure">
                                 <a href="error.html" class="future-link">
-                                    <img src="media/future.png" alt="placeholder" class="img-fluid image">
+                                    <img src="media/Future_Approved.png" width="295" alt="placeholder" class="img-fluid image">
                                 </a>
                                 <figcaption class="figcaption future-caption">
                                     future
@@ -153,103 +190,368 @@
                     </div>
                 </div>
             </section>
-        </div>
-        <div class="container d-md-none">
-            <section class="section" id="moreInfoForm">
-                <h2 class="form-h2 text-center mb-5">Learn More</h2>
-                <div class="row" >
-                    <div class="form-con mt-6 text-center">
-                        <form id="form" class="form" onSubmit={handleSubmit}>
-                            <div class="mb-3">
-                                <div class="col-auto">
-                                    <label htmlFor="fName" class="form-label text-capitalize form-text">first name</label>
-                                    <input
-                                        type="text"
-                                        id="fName"
-                                        name="fName"
-                                        onChange={handleChange}
-                                        class="form-control"
-                                        required
-                                    />
+            <div class="container d-md-none">
+                <section class="section" id="moreInfoForm">
+                    <h2 class="form-h2 text-center mb-5">Learn More</h2>
+                    <div class="row" >
+                        <div class="form-con mt-6 text-center">
+                            <form id="form" class="form" onSubmit={handleSubmit}>
+                                <div class="mb-3">
+                                    <div class="col-auto">
+                                        <label htmlFor="fName" class="form-label text-capitalize form-text">first name</label>
+                                        <input
+                                            type="text"
+                                            id="fName"
+                                            name="fName"
+                                            onChange={handleChange}
+                                            class="form-control"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="col-auto">
+                                        <label htmlFor="lName" class="form-label text-capitalize form-text">last name</label>
+                                        <input
+                                            type="text"
+                                            id="lName"
+                                            name="lName"
+                                            onChange={handleChange}
+                                            class="form-control"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="col-auto">
+                                        <label htmlFor="email" class="form-label text-capitalize form-text">email</label>
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            onChange={handleChange}
+                                            class="form-control"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="col-auto">
+                                        <label htmlFor="phone" class="form-label text-capitalize form-text">phone number</label>
+                                        <input
+                                            type="tel"
+                                            id="phone"
+                                            name="phone"
+                                            onChange={handleChange}
+                                            class="form-control"
+                                            required
+                                        />
+                                    </div>
                                 </div>
-                                <div class="col-auto">
-                                    <label htmlFor="lName" class="form-label text-capitalize form-text">last name</label>
-                                    <input
-                                        type="text"
-                                        id="lName"
-                                        name="lName"
-                                        onChange={handleChange}
-                                        class="form-control"
-                                        required
-                                    />
+                                <div class="mb-3 text-center">
+                                    <button type="submit" class="btn text-capitalize learn-more">
+                                        learn more
+                                    </button>
                                 </div>
-                                <div class="col-auto">
-                                    <label htmlFor="email" class="form-label text-capitalize form-text">email</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        onChange={handleChange}
-                                        class="form-control"
-                                        required
-                                    />
-                                </div>
-                                <div class="col-auto">
-                                    <label htmlFor="phone" class="form-label text-capitalize form-text">phone number</label>
-                                    <input
-                                        type="tel"
-                                        id="phone"
-                                        name="phone"
-                                        onChange={handleChange}
-                                        class="form-control"
-                                        required
-                                    />
-                                </div>
-                            </div>
-                            <div class="mb-3 text-center">
-                                <button type="submit" class="btn text-capitalize learn-more">
-                                    learn more
-                                </button>
-                            </div>
-                        </form>
+                            </form>
 
-                    </div>
-                </div>
-            </section>
-        </div>
-        <section class="section" id="locationSection">
-            <div class="container">
-                <div class="row location-row-1">
-                    <div class="location-row col col-md-6">
-                        <a href="apply.html" class="location-link btn">
-                            <h3 class="location-head">Schedule a Tour!</h3>
-                        </a>
-                        <div class="location-video-div">
-                            <video src="media/videov.mp4" class="location-video img-fluid" controls></video>
                         </div>
                     </div>
-                    <div class="location-row col-md-6">
-                        <h3 class="feed-head">Follow our Feed!</h3>
-                        <div class="follow-feed-div">
+                </section>
+            </div>
+            <section class="section" id="locationSection">
+                <div class="row location-row-1">
+                    <div class="location-row col col-md-6">
+                        <div class="d-none d-md-flex location-video-div">
+                            <video src="media/videov.mp4" class="location-video img-fluid" controls></video>
+                        </div>
+                        <div class="follow-feed-div d-md-none">
                             <a href="https://www.instagram.com/bevalassy" class="feed-link btn" target="_blank">
                                 <img src="media/feed.png" alt="follow our feed" class="img img-fluid">
                             </a>
                         </div>
+                    </div>  
+                </div> 
+            </section>
+    </div>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md footer-nav-div">
+                    <nav class="nav footer-nav d-none d-md-flex" id="footerNav">
+                        <ul class="footer-nav-list-1 col-3">
+                            <li class="nav-list-item footer-nav-list-item">
+                                    <h5 class="footer-subhead text-uppercase student">
+                                        student
+                                    </h5>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="apply.html" class="footer-nav-list-link">
+                                    apply online
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    progams
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    culture
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    press
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    student life
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    future
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    faqs
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    consumer
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    disclosures
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    accommodation
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    request
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav-list-2 col-3">
+                            <li class="nav-list-item footer-nav-list-item">
+                                    <h5 class="footer-subhead text-uppercase guest">
+                                        guest
+                                    </h5>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    services by students
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    products
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item mt-5">
+                                    <h5 class="footer-subhead text-uppercase account">
+                                        account
+                                    </h5>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    sign in
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav-list-3 col-3">
+                            <li class="nav-list-item footer-nav-list-item">
+                                    <h5 class="footer-subhead text-uppercase help">
+                                        help & info
+                                    </h5>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    careers
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    faqs
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    contact us
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    transcripts
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    privacy policy
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    return policy
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav-list-4 col-3">
+                            <li class="nav-list-item footer-nav-list-item">
+                                    <h5 class="footer-subhead text-uppercase social">
+                                        social media
+                                    </h5>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <div class="follow-feed-div">
+                                    <a href="https://www.instagram.com/bevalassy" class="feed-link btn" target="_blank">
+                                        <img src="media/feed.png" alt="follow our feed" class="img img-fluid">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="col d-md-none footer-nav-div">
+                        <nav class="nav footer-nav d-flex" id="footerNav">
+                            <ul class="footer-nav-list-1 ">
+                                <li class="nav-list-item footer-nav-list-item">
+                                        <h5 class="footer-subhead text-uppercase student">
+                                            student
+                                        </h5>
+                
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="apply.html" class="footer-nav-list-link">
+                                        apply online
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        progams
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        culture
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        press
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        student life
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        future
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        faqs
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        consumer
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        disclosures
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        accommodation
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        request
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="footer-nav-list-2 ">
+                                <li class="nav-list-item footer-nav-list-item">
+                                        <h5 class="footer-subhead text-uppercase help">
+                                            help & info
+                                        </h5>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        careers
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        faqs
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        contact us
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        transcripts
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        privacy policy
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        return policy
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="footer-nav-list-3 ">
+                                <li class="nav-list-item footer-nav-list-item">
+                                        <h5 class="footer-subhead text-uppercase guest">
+                                            guest
+                                        </h5>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        services by students
+                                    </a>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        products
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="footer-nav-list-4 ">
+                                <li class="nav-list-item footer-nav-list-item mt-5">
+                                        <h5 class="footer-subhead text-uppercase account">
+                                            account
+                                        </h5>
+                                </li>
+                                <li class="nav-list-item footer-nav-list-item">
+                                    <a href="error.html" class="footer-nav-list-link">
+                                        sign in
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-                <div class="contact">
-                    <a href="apply.html" class="contact-btn btn text-uppercase">
-                        contact us
-                    </a>
-                </div>
-
             </div>
-        </section>
-        
-    </main>
-
-    <footer class="footer" id="footer">
-        <div class="colophon text-center">Website by SemiiJ &copy; 2024</div>
+            <div class="colophon text-center">Website by SemiiJ &copy; 2024</div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

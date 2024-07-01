@@ -10,20 +10,99 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="logo-home-logo">
-                <a href="index.html" class="error-home-link">
-                    <img src="media/logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="home-div">
-                <p class="home-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
-                      </svg>
-                      Go Home
-                </p>
-
-            </div>
+            <header class="header" id="header">
+                <div class="container">
+                    <div class="row header-row">
+                        <div class="col-md-2 col-xxl space"></div>
+                        <div class="col-md-4 col-xxl-5">
+                            <div class="logo-div" id="topLogo">
+                                <a href="index.html" class="logo-link">
+                                    <img src="media/ValassyFinal_black.png" alt="" class="img img-fluid logo">
+                                </a>
+                                <div class="logo-head">
+                                    Valassy <span class="d-block span">
+                                        Institute of
+                                    </span>  Cosmetology
+                                </div>
+                                <!-- <a href="#" class="logo-link">
+                                    <img src="media/logo.png" alt="" class="logo img-fluid image">
+                                </a> -->
+                            </div>
+                        </div>
+                        <div class="dropdown text-center d-md-none mobile-nav">
+                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item nav-list-link drop-apply-link" href="apply.html">apply online</a></li>
+                              <li><a class="dropdown-item nav-list-link drop-call-admiss-link" href="error.html">call admissions</a></li>
+                              <li><a class="dropdown-item nav-list-link programs-link" href="error.html">programs</a></li>
+                              <li><a class="dropdown-item nav-list-link locations-link" href="error.html">locations</a></li>
+                              <li><a class="dropdown-item nav-list-link culture-link" href="error.html">culture</a></li>
+                              <li><a class="dropdown-item nav-list-link student-life-link" href="error.html">student life</a></li>
+                              <li><a class="dropdown-item nav-list-link faqs-link" href="error.html">faqs</a></li>
+                              <li><a class="dropdown-item nav-list-link shop-link" href="error.html">shop</a></li>
+                              <li><a class="dropdown-item nav-list-link programs-link services-link" href="error.html">services</a></li>
+                              <li><a class="dropdown-item nav-list-link locations-link careers-link" href="error.html">careers</a></li>
+                              <li><a class="dropdown-item nav-list-link culture-link sign-in-link" href="error.html">sign in</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-none d-md-block col-md-5 col-xxl-6 mt-5">
+                            <nav class="nav justify-content-end" id="topNav">
+                                <ul class="nav-list" id="navList">
+                                    <li class="nav-list-item apply">
+                                        <a href="apply.html" class="nav-list-link apply-link">apply online</a>
+                                    </li>
+                                    <li class="nav-list-item call-admiss">
+                                        <a href="error.html" class="nav-list-link call-admiss-link">call admissions</a>
+                                    </li>
+                                    <li class="nav-list-item line-break"></li>
+                                    <li class="nav-list-item programs dropdown">
+                                        <a href="#" class="nav-list-link programs-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">programs</a>
+                                        <ul class="dropdown-menu" id="sub-menu">
+                                            <li class="sub-menu-list-item dropdown-item">
+                                                <a href="cosmetology.html" class="sub-menu-link">
+                                                Cosmetology</a>
+                                            </li>
+                                            <li class="sub-menu-list-item dropdown-item"> 
+                                                <a href="esthetician.html" class="sub-menu-link">
+                                                Esthetician</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-list-item locations">
+                                        <a href="error.html" class="nav-list-link locations-link">locations</a>
+                                    </li>
+                                    <li class="nav-list-item culture">
+                                        <a href="error.html" class="nav-list-link culture-link">culture</a>
+                                    </li>
+                                    <li class="nav-list-item student-life">
+                                        <a href="error.html" class="nav-list-link student-life-link">student life</a>
+                                    </li>
+                                    <li class="nav-list-item faqs">
+                                        <a href="error.html" class="nav-list-link faqs-link">faqs</a>
+                                    </li>
+                                    <li class="nav-list-item line-line-break"></li>
+                                    <li class="nav-list-item shop">
+                                        <a href="error.html" class="nav-list-link shop-link">shop</a>
+                                    </li>
+                                    <li class="nav-list-item services">
+                                        <a href="error.html" class="nav-list-link services-link">services</a>
+                                    </li>
+                                    <li class="nav-list-item careers">
+                                        <a href="error.html" class="nav-list-link careers-link">careers</a>
+                                    </li>
+                                    <li class="nav-list-item sign-in">
+                                        <a href="error.html" class="nav-list-link sign-in-link">sign in</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
         </div>
         <div class="coming-soon vh-100"></div>
     </div>
