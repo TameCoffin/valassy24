@@ -292,7 +292,7 @@ color: white;
 /* apply form */
 .apply-img-div{
     height: 300px;
-    background-image: url(/media/enroll\(1\).jpeg);
+    background-image: url(/media/enroll.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -305,12 +305,14 @@ color: white;
 }
 
 .form-con{
-    justify-content: center;    
+    /* border: 2px solid; */
 }
 
 .form-h2{
     color: white;
     background-color: #0097B2;
+    text-transform: uppercase;
+    font-size: calc(38px + (40 - 38) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .form{
@@ -321,15 +323,26 @@ color: white;
 .area-btn{
     font-size: calc(22px + (24 - 22) * ((100vw - 300px) / (1600 - 300)));
 }
+
+.form-text{
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .form-label, .form-check-label{
-    color: black
+    color: black;
+
 }
 
 .form-check{
     display: flex;
     justify-content: center;
 }
+
+.textarea{
+    height: 100px;
+}
 .learn-more{
+    font-size: calc(24px + (26 - 24) * ((100vw - 300px) / (1600 - 300)));
     color: white;
     background-color: #0097B2;
 } 
@@ -482,8 +495,10 @@ footer-logo{
 }
 
 #moreInfoForm{
-    border: 1px solid;
-    box-shadow:  10px 10px;
+    /* border: 1px solid; */
+    /* box-shadow:  10px 10px; */
+    /* display: inline; */
+    /* justify-content: center; */
 }
 
 /* coming soon */
@@ -509,11 +524,17 @@ footer-logo{
     width: 400px;
     height: 200px;
 }
-.begin-btn{
+.begin-btn, .getStarted-btn{
     display: flex;
     justify-content: center;
     color: white;
     border: 3px solid hotpink;
+}
+
+.getStarted-btn{
+    font-size: calc(22px + (26 - 22) * ((100vw - 300px) / (1600 - 300)));
+    margin-top: 10px;
+    background-color: black;
 }
 .programsStart{
     margin: 0 auto;
