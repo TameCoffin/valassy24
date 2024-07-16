@@ -3,6 +3,12 @@
 :root{
     --font1: "Oswald", sans-serif;
     --font2: "Bell MT", opentype;
+    --lavender: #c54989;
+    --plum: #6c3a6e;
+    --geranium: #ff9191;
+    --eBlue: #14aad0;
+    --wedgwood: #3b768f;
+    --darkGreen: #566a6a;
 }
 
 a{
@@ -41,10 +47,10 @@ section{
         right: 100px;
     }
     
-    .fixed-left{
+    .fixed-right{
         position: fixed;
-        bottom: 40px;
-        left: -40px;
+        bottom: 240px;
+        right: -40px;
     }
 
 }
@@ -151,19 +157,19 @@ section{
     font-weight: 500;
     color: orange;
     padding: 5px 10px;
-    background-color: rgb(188, 185, 232);
+    background-color: #c54989;
     border: 1px solid white;
     border-radius: 5px;
     margin: 5px;
 }
 
 .call-admiss{
-    background-color: #df9cbe;
+    background-color: #6c3a6e;
     margin-left: 20px;
 }
 
 .apply-link, .call-admiss-link{
-color: rgb(207, 69, 59);
+color: rgb(255, 255, 255);
 }
 
 .sub-menu-link{
@@ -194,7 +200,7 @@ color: rgb(207, 69, 59);
 
 
 .learn-more-side{
-    background-color: #14aad0;
+    background-color: var(--lavender);
     /* border-radius: 15px; */
     color: #ffffff;
     font-size: calc(30px + (32 - 30) * ((100vw - 300px) / (1600 - 300)));
@@ -203,7 +209,7 @@ color: rgb(207, 69, 59);
 .enroll{
     display: flex;
     flex-direction: column;
-    background-color: rgb(214, 98, 210);
+    background-color: #c54989;
     height: 60px;
 }
 
@@ -322,7 +328,7 @@ color: rgb(207, 69, 59);
 
 .form-h2{
     color: white;
-    background-color: #0097B2;
+    background-color: var(--wedgwood);
     text-transform: uppercase;
     font-size: calc(38px + (40 - 38) * ((100vw - 300px) / (1600 - 300)));
 }
@@ -334,33 +340,54 @@ color: rgb(207, 69, 59);
 }
 .area-btn{
     font-size: calc(22px + (24 - 22) * ((100vw - 300px) / (1600 - 300)));
+    color: var(--plum);
 }
 
 .form-text{
     text-transform: uppercase;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--font1);
 }
 .form-label, .form-check-label{
-    color: black;
-
+    color: var(--plum);
 }
 
-.form-check{
+/* .form-check{
     display: flex;
     justify-content: center;
-}
+} */
 
 .textarea{
     height: 100px;
 }
-.learn-more{
+/* .learn-more{
     font-size: calc(24px + (26 - 24) * ((100vw - 300px) / (1600 - 300)));
     color: white;
-    background-color: #0097B2;
-} 
+    background-color: var(--wedgwood);
+}  */
+
+#learnMoreImg {
+    width: 70%;
+    transition: ease-in-out 0.2s;
+}
+
+#learnMoreImg:hover {
+    scale: 120%;
+}
+
 .apply-btn{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--font1);
     font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
+    background-color: var(--lavender);
+}
+
+.apply-btn:hover{
+    background-color: var(--plum);
+    color: white;
+}
+
+#formComment {
+    font-size: 30px;
+    padding-bottom: 25px;
 }
 
 .contact{
@@ -382,13 +409,14 @@ color: rgb(207, 69, 59);
 
 #footer{
     height: 485px;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(243, 243, 243);
     justify-content: space-evenly;
 }
 
 @media (min-width: 992px) {
     #footer{
         height: 500px;
+        padding-top: 30px;
     }    
 }
 @media (min-width:768px) {
@@ -450,8 +478,8 @@ color: rgb(207, 69, 59);
 /* apply */
 
 .apply-line{
-    background-color: #c54989;
-    height: 30px;
+    background-color: var(--lavender);
+    height: 40px;
 }
 
 #moreInfoForm{
@@ -600,4 +628,10 @@ color: rgb(207, 69, 59);
     width: 100%;
     height: 50%;
     object-fit: cover;
+}
+
+/* Copy */
+
+#copyText  {
+    font-size: 30px;
 }
