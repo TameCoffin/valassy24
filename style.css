@@ -280,7 +280,7 @@ color: white;
     position: absolute;
     padding: 10px 30px;
     text-transform:uppercase ;
-    background-color: orange;
+    background-color: grey;
     color: white;
     top: 380px;
     right: 300px;
@@ -288,7 +288,7 @@ color: white;
 }
 
 .get-started-link:hover{
-    color: hotpink;
+    color: #6c3a6e;
     background-color: white;
 }
 
@@ -320,9 +320,11 @@ color: white;
         margin: 10px;  
     }
 }
-
-#cspfItems {
-    width: 80%;
+@media (max-width: 767px) {
+    #cspfItems {
+        width: 80%;
+    }
+    
 }
 
 .culture-div, .student-life-div, .programs-div, .future-div{
@@ -547,7 +549,7 @@ color: white;
    background-size: cover;
 }
 
-.culture-wip {
+/* .culture-wip {
     object-fit: cover;
     top: 0;
     left: 0;
@@ -556,6 +558,10 @@ color: white;
     background-repeat: no-repeat;
     background-size: contain;
     height: 400px;
+} */
+
+.culture-wip{
+    /* object-fit:contain; */
 }
 @media (min-width: 768px) {
     .coming-soon{
@@ -689,5 +695,6 @@ color: white;
 /* Copy */
 
 #copyText  {
+    color: black;
     font-size: 30px;
 }
