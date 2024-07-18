@@ -38,10 +38,10 @@
                       <li><a class="dropdown-item nav-list-link drop-call-admiss-link" href="error.html"target="_blank" rel="noopener noreferrer">call admissions</a></li>
                       <li><a class="dropdown-item nav-list-link programs-link" href="error.html"target="_blank" rel="noopener noreferrer">programs</a></li>
                       <li><a class="dropdown-item nav-list-link locations-link" href="error.html"target="_blank" rel="noopener noreferrer">locations</a></li>
-                      <li><a class="dropdown-item nav-list-link culture-link" href="error.html"target="_blank" rel="noopener noreferrer">culture</a></li>
-                      <li><a class="dropdown-item nav-list-link student-life-link" href="error.html"target="_blank" rel="noopener noreferrer">student life</a></li>
+                      <li><a class="dropdown-item nav-list-link culture-link" href="culture.html"target="_blank" rel="noopener noreferrer">culture</a></li>
+                      <li><a class="dropdown-item nav-list-link student-life-link" href="studentLife.html"target="_blank" rel="noopener noreferrer">student life</a></li>
                       <li><a class="dropdown-item nav-list-link faqs-link" href="error.html"target="_blank" rel="noopener noreferrer">faqs</a></li>
-                      <li><a class="dropdown-item nav-list-link shop-link" href="error.html"target="_blank" rel="noopener noreferrer">shop</a></li>
+                      <li><a class="dropdown-item nav-list-link shop-link" href="shop.html"target="_blank" rel="noopener noreferrer">shop</a></li>
                       <li><a class="dropdown-item nav-list-link programs-link services-link" href="error.html"target="_blank" rel="noopener noreferrer">services</a></li>
                       <li><a class="dropdown-item nav-list-link locations-link careers-link" href="error.html"target="_blank" rel="noopener noreferrer">careers</a></li>
                       <li><a class="dropdown-item nav-list-link culture-link sign-in-link" href="error.html"target="_blank" rel="noopener noreferrer">sign in</a></li>
@@ -68,23 +68,27 @@
                                         <a href="esthetician.html" class="sub-menu-link" target="_blank" rel="noopener noreferrer">
                                         Esthiology</a>
                                     </li>
+                                    <li class="sub-menu-list-item dropdown-item"> 
+                                        <a href="nail.html" class="sub-menu-link" target="_blank" rel="noopener noreferrer">
+                                        Nail Technician</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-list-item locations">
                                 <a href="error.html" class="nav-list-link locations-link" target="_blank" rel="noopener noreferrer">locations</a>
                             </li>
                             <li class="nav-list-item culture">
-                                <a href="error.html" class="nav-list-link culture-link" target="_blank" rel="noopener noreferrer">culture</a>
+                                <a href="culture.html" class="nav-list-link culture-link" target="_blank" rel="noopener noreferrer">culture</a>
                             </li>
                             <li class="nav-list-item student-life">
-                                <a href="error.html" class="nav-list-link student-life-link" target="_blank" rel="noopener noreferrer">student life</a>
+                                <a href="studentLife.html" class="nav-list-link student-life-link" target="_blank" rel="noopener noreferrer">student life</a>
                             </li>
                             <li class="nav-list-item faqs">
                                 <a href="error.html" class="nav-list-link faqs-link" target="_blank" rel="noopener noreferrer">faqs</a>
                             </li>
                             <li class="nav-list-item line-line-break"></li>
                             <li class="nav-list-item shop">
-                                <a href="error.html" class="nav-list-link shop-link" target="_blank" rel="noopener noreferrer">shop</a>
+                                <a href="shop.html" class="nav-list-link shop-link" target="_blank" rel="noopener noreferrer">shop</a>
                             </li>
                             <li class="nav-list-item services">
                                 <a href="error.html" class="nav-list-link services-link" target="_blank" rel="noopener noreferrer">services</a>
@@ -103,21 +107,32 @@
         </div>
     </header>
     <main class="main" id="cosMain">
-        <div class="container">
+        <div class="container-fluid">
             <div class="learn-more-side rotate-90 fixed-left btn text-capitalize d-none d-md-block">tour valassy</div>
             <div class="row">
-                <div class="image col-md-6">
-                    <img height="385" src="media/cosimg.jpg" alt="cosmetology image" class="cos-img img-fluid"></img>
+                <div class="image col-md-6" id="nailCol">
+                    <img height="385" src="media/cosimg.jpg" alt="esthetician image" id="programImage"></img>
+                    <div class="program-video-div col" id="videoDiv">
+                        <h2 class="text-center text-uppercase video-head">Cosmetology Video</h2>
+                        <iframe src="media/ValassyEsthiologySec.mp4" frameborder="0" allowfullscreen class="program-video"></iframe>
+                        <div class="button programsStart col d-flex justify-content-center w-25" onclick="">
+                            <a href="apply.html" class="btn begin-btn w-25 ">BEGIN NOW</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="program-text-div right col-md-6">
+                <div class="program-text-div right col-md-4 px-5">
                     <h1 class="program-head text-uppercase">cosmetology</h1>
-                    <p class="program-text">Our cosmetology classes provide comprehensive training in hair, skin, and nail care. Students learn techniques, product knowledge, and business skills. Graduates can go on to pursue careers as hairstylists, makeup artists, and even salon owners. The Valassy hands-on education experience opens doors to diverse opportunities in the beauty industry, leading you to a fulfilling professional career.</p>
+                    <p class="program-text">
+                        Our cosmetology classes provide comprehensive training in hair, skin, and nail care. Students learn techniques, product knowledge, and business skills. Graduates can go on to pursue careers as hairstylists, makeup artists, and even salon owners. The Valassy hands-on education experience opens doors to diverse opportunities in the beauty industry, leading you to a fulfilling professional career.
+                    </p>
                     <h2 class="program-desc text-uppercase">Program Description</h2>
-                    <p class="program-text">The Valassy Institute of Cosmetology offers a program that has instructor-led classwooms PLUS clinical training as well as hands-on experience. Courses focus on theoretical and practical experience to help students learn professional skills that are vital to success. Each phase of the student's education includes a combination of learning approaches for students to become well-versed with hair and scalp treatments, hair care rinces, hair shaping, hair arranging, chemical waving and relaxing, hair coloring, facials, skin care, hair removal, manicuring/pedicuring, professional business-building skills in management and employability skills. </p>
-                    <p class="program-text">The last phase of our program offers students the opportunity to become advanced alongside licensed instructors within a real salon environment. Students will learn the latest styles and techniques in haircutting, hair stylist, and hair coloring. </p>
+                    <p class="program-text">The Valassy Institute of Cosmetology offers a program that has instructor-led classwooms PLUS clinical training as well as hands-on experience. Courses focus on theoretical and practical experience to help students learn professional skills that are vital to success. Each phase of the student's education includes a combination of learning approaches for students to become well-versed with hair and scalp treatments, hair care rinces, hair shaping, hair arranging, chemical waving and relaxing, hair coloring, facials, skin care, hair removal, manicuring/pedicuring, professional business-building skills in management and employability skills.
+                    </p>
                     <h2 class="program-obj text-uppercase">Program Objectives</h2>
-                    <p class="program-text">The objectives of this Valassy Institute of Cosmetology program are designed to prepare students for the Mississippi State licensing examination in cosmetology and provide the training that will prepare them to enter the workforce as a cosmetologist, retail sales specialist, salon manager, or salon owner. Students will learn technical, personal, and professional skills - the Valassy way!</p>
-                    <h2 class="program-paths text-uppercase">Paths for Stylists</h2>
+                    <p class="program-text">
+                        The objectives of this Valassy Institute of Cosmetology program are designed to prepare students for the Mississippi State licensing examination in cosmetology and provide the training that will prepare them to enter the workforce as a cosmetologist, retail sales specialist, salon manager, or salon owner. Students will learn technical, personal, and professional skills - the Valassy way!
+                        </p>
+                    <h2 class="program-paths text-uppercase">PATHS FOR Stylists</h2>
                     <ul class="path-list">
                         <li class="path-list-item">Hair Show Colorist</li>
                         <li class="path-list-item">Fashion Photo Stylist</li>
@@ -126,78 +141,70 @@
                         <li class="path-list-item">Makeup Artist</li>
                         <li class="path-list-item">Stylist</li>
                         <li class="path-list-item">Valassy Institute of Cosmetology Instructor</li>
-                        <li class="path-list-item">Retail Sales Specialist
-                        </li>
+                        <li class="path-list-item">Retail Sales Specialist</li>
                         <li class="path-list-item">Salon Manager</li>
-                        <li class="path-list-item">Salon Owner
-                        </li>
-    
+                        <li class="path-list-item">Salon Owner</li>
                     </ul>
                 </div>
-                <div class="program-video-div left col-md-6 mb-5">
-                    <h2 class="text-center text-uppercase video-head">Cosmetology Video</h2>
-                    <iframe src="media/cosmevideo.mp4" frameborder="0" allowfullscreen class="program-video"></iframe>
-                    <div class="button programsStart col-4 col-md-3" onclick="">
-                        <a href="apply.html" class="btn begin-btn">BEGIN NOW</a>
-                    </div>
+            </div>
+            <div class="container">
+                <div class="study-areas">
+                    <h2 class="study-areas-head mb-4 text-capitalize">Specialized Areas of Study:</h2>
+                        <div class="single1">
+                            <div class="single-study">
+                                <img src="media/business.png" alt="busniess development image" class="study-area-img img-fluid" height="154">
+                                <h5>Business Development</h5>
+                            </div>
+                            <div class="single-study">
+                                <img src="media/haircoloring.png" alt="hair coloring image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Hair Coloring</h5>
+                            </div>
+                            <div class="single-study">
+                                <img src="media/haircutting.png" alt="hair cutting image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Hair Cutting</h5>
+                            </div>
+                            <div class="single-study">
+                                <img src="media/hairtexturing.png" alt="hair texturing image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Hair Texturing</h5>
+                            </div>
+                        </div>
+                        <div class="single2">
+                            <div class="single-study">
+                                <img src="media/makeupart.png" alt="makeup artistry image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Makeup Artistry</h5>
+                            </div>
+                            <div class="single-study">
+                                <img src="media/nailcare.png" alt="nail care image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Nail Care</h5>
+                            </div>
+                            <div class="single-study">
+                                <img src="media/retailknowledge.png" alt="retail knowledge image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Retail Knowledge</h5>
+                            </div>
+                            <div class="single-study">
+                                <img src="media/wellness.png" alt="wellness image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Wellness</h5>
+                            </div>
+                        </div>
+                </div>
+                <div class="programcontent">
+                    <p class="consumer text-center">
+                        <a href="error.html" class="consumer-link" target="_blank">CONSUMER INFORMATION AND DISCLOSURE</a>
+                    </p>
                 </div>
             </div>
-            <div class="study-areas">
-                <h2 class="study-areas-head mb-4 text-capitalize">Specialized Areas of Study:</h2>
-                    <div class="single1">
-                        <div class="single-study">
-                            <img src="media/business.png" alt="busniess development image" class="study-area-img img-fluid" height="154">
-                            <h5>Business Development</h5>
+            <section class="section pb-4" id="locationSection d-md-none">
+                <div class="row location-row-1">
+                    <div class="location-row col">
+                        <div class="follow-feed-div d-md-none">
+                            <a href="https://www.instagram.com/bevalassy" class="feed-link btn" target="_blank">
+                                <img src="media/feed.png" alt="follow our feed" class="img img-fluid">
+                            </a>
                         </div>
-                        <div class="single-study">
-                            <img src="media/haircoloring.png" alt="hair coloring image" class="study-area-img img-fluid" width="233" height="154">
-                            <h5>Hair Coloring</h5>
-                        </div>
-                        <div class="single-study">
-                            <img src="media/haircutting.png" alt="hair cutting image" class="study-area-img img-fluid" width="233" height="154">
-                            <h5>Hair Cutting</h5>
-                        </div>
-                        <div class="single-study">
-                            <img src="media/hairtexturing.png" alt="hair texturing image" class="study-area-img img-fluid" width="233" height="154">
-                            <h5>Hair Texturing</h5>
-                        </div>
-                    </div>
-                    <div class="single2">
-                        <div class="single-study">
-                            <img src="media/makeupart.png" alt="makeup artistry image" class="study-area-img img-fluid" width="233" height="154">
-                            <h5>Makeup Artistry</h5>
-                        </div>
-                        <div class="single-study">
-                            <img src="media/nailcare.png" alt="nail care image" class="study-area-img img-fluid" width="233" height="154">
-                            <h5>Nail Care</h5>
-                        </div>
-                        <div class="single-study">
-                            <img src="media/retailknowledge.png" alt="retail knowledge image" class="study-area-img img-fluid" width="233" height="154">
-                            <h5>Retail Knowledge</h5>
-                        </div>
-                        <div class="single-study">
-                            <img src="media/wellness.png" alt="wellness image" class="study-area-img img-fluid" width="233" height="154">
-                            <h5>Wellness</h5>
-                        </div>
-                    </div>
+                    </div>  
+                </div> 
+            </section>
             </div>
-            <div class="programcontent">
-                <p class="consumer text-center">
-                    <a href="error.html" class="consumer-link" target="_blank">CONSUMER INFORMATION AND DISCLOSURE</a>
-                </p>
-            </div>
-        </div>
-        <section class="section pb-4" id="locationSection d-md-none">
-            <div class="row location-row-1">
-                <div class="location-row col">
-                    <div class="follow-feed-div d-md-none">
-                        <a href="https://www.instagram.com/bevalassy" class="feed-link btn" target="_blank">
-                            <img src="media/feed.png" alt="follow our feed" class="img img-fluid">
-                        </a>
-                    </div>
-                </div>  
-            </div> 
-        </section>
     </main>
     <footer class="footer" id="footer">
         <div class="container">
