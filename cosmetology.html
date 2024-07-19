@@ -108,7 +108,78 @@
     </header>
     <main class="main" id="cosMain">
         <div class="container-fluid">
-            <div class="learn-more-side rotate-90 fixed-left btn text-capitalize d-none d-md-block">tour valassy</div>
+            <button class="btn learn-more-side rotate-90 fixed d-none d-md-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                Learn More
+            </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <section class="section" id="moreInfoForm">
+                        <h2 class="form-h2 text-center mb-5">Learn More</h2>
+                        <div class="row" >
+                            <div class="form-con mt-6 text-center">
+                                <form id="form" class="form" onSubmit={handleSubmit}>
+                                    <div class="mb-3">
+                                        <div class="col-auto">
+                                            <label htmlFor="fName" class="form-label form-text">first name</label>
+                                            <input
+                                                type="text"
+                                                id="fName"
+                                                name="fName"
+                                                onChange={handleChange}
+                                                class="form-control text-center"
+                                                required
+                                            />
+                                        </div>
+                                        <div class="col-auto">
+                                            <label htmlFor="lName" class="form-label form-text">last name</label>
+                                            <input
+                                                type="text"
+                                                id="lName"
+                                                name="lName"
+                                                onChange={handleChange}
+                                                class="form-control text-center"
+                                                required
+                                            />
+                                        </div>
+                                        <div class="col-auto">
+                                            <label htmlFor="email" class="form-label form-text">email</label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                onChange={handleChange}
+                                                class="form-control text-center"
+                                                required
+                                            />
+                                        </div>
+                                        <div class="col-auto">
+                                            <label htmlFor="phone" class="form-label form-text">phone number</label>
+                                            <input
+                                                type="tel"
+                                                id="phone"
+                                                name="phone"
+                                                onChange={handleChange}
+                                                class="form-control text-center"
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <button type="submit" class="btn text-uppercase learn-more">
+                                            submit
+                                        </button>
+                                    </div>
+                                </form>
+        
+                            </div>
+                        </div>
+                    </section>
+                  
+                </div>
+              </div>
             <div class="row">
                 <div class="image col-md-6" id="nailCol">
                     <img height="385" src="media/cosimg.jpg" alt="esthetician image" id="programImage"></img>
