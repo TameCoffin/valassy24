@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Apply Online</title>
+    <title>Natural Hair Specialist</title>
 </head>
 <body>
     <header class="header" id="header">
@@ -114,121 +114,215 @@
             </div>
         </div>
     </header>
-    <main class="main" id="applyMain">
-        <div class="col">
-            <div class="enroll apply-line">
-            </div>       
-        </div>
+    <main class="main" id="naturalHairMain">
         <div class="container">
+            <button class="btn learn-more-side rotate-90 fixed d-none d-md-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                Learn More
+            </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <section class="section" id="moreInfoForm">
+                        <h2 class="form-h2 text-center mb-5">Learn More</h2>
+                        <div class="row" >
+                            <div class="form-con mt-6 text-center">
+                                <form id="form" class="form" onSubmit={handleSubmit}>
+                                    <div class="mb-3">
+                                        <div class="col-auto">
+                                            <label htmlFor="fName" class="form-label form-text">first name</label>
+                                            <input
+                                                type="text"
+                                                id="fName"
+                                                name="fName"
+                                                onChange={handleChange}
+                                                class="form-control text-center"
+                                                required
+                                            />
+                                        </div>
+                                        <div class="col-auto">
+                                            <label htmlFor="lName" class="form-label form-text">last name</label>
+                                            <input
+                                                type="text"
+                                                id="lName"
+                                                name="lName"
+                                                onChange={handleChange}
+                                                class="form-control text-center"
+                                                required
+                                            />
+                                        </div>
+                                        <div class="col-auto">
+                                            <label htmlFor="email" class="form-label form-text">email</label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                onChange={handleChange}
+                                                class="form-control text-center"
+                                                required
+                                            />
+                                        </div>
+                                        <div class="col-auto">
+                                            <label htmlFor="phone" class="form-label form-text">phone number</label>
+                                            <input
+                                                type="tel"
+                                                id="phone"
+                                                name="phone"
+                                                onChange={handleChange}
+                                                class="form-control text-center"
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <button type="submit" class="btn text-uppercase learn-more">
+                                            submit
+                                        </button>
+                                    </div>
+                                </form>
+        
+                            </div>
+                        </div>
+                    </section>
+                  
+                </div>
+              </div>
             <div class="row">
-                <div class="apply-img-div ">
-                    <!-- <img src="media/apply-img.jpg" alt="apply image" class="apply-img img-fluid" > -->
+                <div class="image col-md-6" id="">
+                        <img height="385" src="media/naturalhair.png" alt="natural hair image" id="" class="mb-5 natural-hair-img img-fluid"></img>
+                        <div class="cost-div p-4">
+                            <h4 class="cost-heading mb-3">Program Cost </h4>
+                            <p class="cost-text">
+                                Clock Hours Required: 300 hrs
+                            </p>
+                            <p class="cost-text">
+                                Tuition Costs: Full-time / Part-time: $1,850
+                            </p>
+                            <p class="cost-text">
+                                Books: $250
+                            </p>
+                            <p class="cost-text">
+                                Student Kit: $400
+                            </p>
+                            <p class="cost-text">
+                                School Shirt: $20
+                            </p>
+                            <p class="cost-text">
+                                Advanced Wig Making Kit: $250
+                            </p>
+                            <p class="cost-text">
+                                Registration Fee: Non-Refundable $100
+                            </p>
+                            <p class="cost-text mb-5">
+                                Total Program Cost $2,870
+                            </p>
+                            <p class="cost-text">
+                                REQUIRED DEPOSIT / DOWN PAYMENT $750 
+                                <div class="space"></div>
+                                Goes towards application fee, books & kit.
+                            </p>
+                            <p class="cost-text">
+                                Monthly Tuition Payments $675.
+                            </p>
+                            <p class="cost-text">
+                                Weekly Tuition Payment $ 168.75.
+                            </p>
+                            
+                            <p class="cost-text">
+                                Deposit required 2 weeks before first day of class.
+                            </p>
+                        </div>
+                </div>
+                <div class="program-text-div right col-md-5">
+                    <h1 class="program-head text-uppercase">become a natural hair specialist</h1>
+                    <p class="program-text">
+                        Your future awaits you at Valassy Institute of Cosmetology  Your career will be filled with unlimited potential, one that can take you among the elite, in directions that are only
+                        dreamt of and holds the possibility to make you a confident, successful professional. As a natural hair care professional, you will play an important role in the lives of your clients. They will come to rely on you to provide them with ongoing service, enabling them
+                        to look and feel their best.
+                        
+                    </p>
+                    <h2 class="program-desc text-uppercase">Program Description</h2>
+                    <p class="program-text">
+                        The Valassy Institute of Cosmetology offers a program that has instructor-led classrooms PLUS clinical training as well as hands-on experience. Courses focus on theoretical and practical experience to help students learn professional skills that are vital to success. Each phase of the student's education includes a combination of learning approaches for students to become well-versed with natural hair care and professional business-building skills in management and employability skills.
+                    </p>
+                    <p class="program-text">
+                        The last phase of our program offers students the opportunity to become advanced alongside licensed instructors within a real salon environment. Students will learn the latest styles and techniques in the industry of beauty.
+                    </p>
+                    <h2 class="program-obj text-uppercase">Program Objectives</h2>
+                    <p class="program-text">
+                        Our Natural Hair  program is designed to provide students with the necessary requirements needed to prepare them for an entry level position in the beauty industry. The need for professional Natural Hair Care Specialists  to provide creative artistic, healthy beauty solutions for hair is growing significantly and our objective is to assure we train and educate the qualified candidates in the industry.
+                    </p>
+                    <h2 class="program-paths text-uppercase">styles & techniques of natural hair styling includes:</h2>
+                    <ul class="path-list">
+                        <li class="path-list-item">Blow-dry and thermal iron</li>
+                        <li class="path-list-item">Business Management</li>
+                        <li class="path-list-item">Extending</li>
+                        <li class="path-list-item">Locking</li>
+                        <li class="path-list-item">Professional Ethics</li>
+                        <li class="path-list-item">Twisting</li>
+                        <li class="path-list-item">Wrapping</li>
+                    </ul>
                 </div>
             </div>
-            <section class="section" id="moreInfoForm">
-                <h2 class="form-h2 text-center">Contact Information</h2>
-                <p class="fill-info text-center mb-3">Fill out the information below</p>
-                <div class="row form-div">
-                    <div class="col-2 col-md-3"></div>
-                    <div class="form-con mt-6 col-auto col-md-6 text-center">
-                        <form id="form" class="form" onSubmit={handleSubmit}>
-                            <div class="">
-                                <div class="col-auto">
-                                    <label htmlFor="fName" class="form-label form-text">first name</label>
-                                    <input
-                                        type="text"
-                                        id="fName"
-                                        name="fName"
-                                        onChange={handleChange}
-                                        class="form-control"
-                                        required
-                                    />
-                                </div>
-                                <div class="col-auto">
-                                    <label htmlFor="lName" class="form-label form-text">last name</label>
-                                    <input
-                                        type="text"
-                                        id="lName"
-                                        name="lName"
-                                        onChange={handleChange}
-                                        class="form-control"
-                                        required
-                                    />
-                                </div>
-                                <div class="col-auto">
-                                    <label htmlFor="email" class="form-label form-text">Your email</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        onChange={handleChange}
-                                        class="form-control"
-                                        required
-                                    />
-                                </div>
-                                <!-- <div class="col-auto">
-                                    <label htmlFor="phone" class="form-label form-text">phone number</label>
-                                    <input
-                                        type="tel"
-                                        id="phone"
-                                        name="phone"
-                                        onChange={handleChange}
-                                        class="form-control"
-                                        required
-                                    />
-                                </div> -->
-                                <!-- <label htmlFor="communication" class="form-label form-text">preferred communication</label>
-                                <div class="row form-check-row mb-3">
-                                    <div class="form-check col-md-4">
-                                        <input class="form-check-input" type="radio" name="phone" id="phone">
-                                        <label class="form-check-label" for="phone">
-                                          Phone
-                                        </label>
-                                      </div>
-                                      <div class="form-check col-md-4">
-                                        <input class="form-check-input" type="radio" name="text" id="text">
-                                        <label class="form-check-label" for="text">
-                                          Text
-                                        </label>
-                                      </div>
-                                      <div class="form-check col-md-4">
-                                        <input class="form-check-input" type="radio" name="email" id="email">
-                                        <label class="form-check-label" for="email">
-                                          Email
-                                        </label>
-                                      </div>
-                                </div> -->
-                                <div class="area-of-interest mb-3">
-                                    <div class="dropdown">
-                                        <button class="area-btn btn dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                          Choose a program
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Cosmetology</a></li>
-                                            <li><a class="dropdown-item" href="#">Esthiology</a></li>
-                                            <li><a class="dropdown-item" href="#">Nail Technician</a></li>
-                                            <li><a class="dropdown-item" href="#">Natural Hair Specialist</a></li>
-                                            <li><a class="dropdown-item" href="#">Instructor</a></li>
-                                            <li><a class="dropdown-item" href="#">Undecided</a></li>
-                                        </ul>
-                                      </div>
-                                </div>
+            <div class="container">
+                <div class="study-areas">
+                    <h2 class="study-areas-head mb-4 text-capitalize">Specialized Areas of Study:</h2>
+                        <div class="single1">
+                            <div class="single-study">
+                                <img src="media/business.png" alt="busniess development image" class="study-area-img img-fluid" height="154">
+                                <h5>Anatomy</h5>
                             </div>
-                            <div class="consent-text-div">
-                                <p class="consent-heading">Start your journey with Valassy!</p>
-                                <p class="consent-text">By clicking the SUBMIT button as my official signature, I expressly consent to Valassy Institute of Cosmetology representatives contacting me via telephone, text, email or prerecorded message using automated telephone technology regarding Valassy Institute of Cosmetology programs, events and announcements. I understand that consent is not required to purchase goods or services from Valassy Institute of Cosmetology and that I may withdraw my consent at any time.</p>
+                            <div class="single-study">
+                                <img src="media/haircoloring.png" alt="hair coloring image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Bacteriology</h5>
                             </div>
-                            <div class="mb-3 text-center">
-                                <button type="submit" class="apply-btn btn text-capitalize">
-                                    submit
-                                </button>
+                            <div class="single-study">
+                                <img src="media/haircutting.png" alt="hair cutting image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Client Consultation</h5>
                             </div>
-                        </form>
-                    </div>
+                            <div class="single-study">
+                                <img src="media/hairtexturing.png" alt="hair texturing image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Disinfection</h5>
+                            </div>
+                        </div>
+                        <div class="single2">
+                            <div class="single-study">
+                                <img src="media/makeupart.png" alt="makeup artistry image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Draping</h5>
+                            </div>
+                            <div class="single-study">
+                                <img src="media/nailcare.png" alt="nail care image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>First Aid</h5>
+                            </div>
+                            <div class="single-study">
+                                <img src="media/retailknowledge.png" alt="retail knowledge image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Sanitation</h5>
+                            </div>
+                            <div class="single-study">
+                                <img src="media/wellness.png" alt="wellness image" class="study-area-img img-fluid" width="233" height="154">
+                                <h5>Shampooing</h5>
+                            </div>
+                        </div>
                 </div>
+                <div class="programcontent">
+                    <p class="consumer text-center">
+                        <a href="error.html" class="consumer-link" target="_blank">CONSUMER INFORMATION AND DISCLOSURE</a>
+                    </p>
+                </div>
+            </div>
+            <section class="section pb-4" id="locationSection d-md-none">
+                <div class="row location-row-1">
+                    <div class="location-row col">
+                        <div class="follow-feed-div d-md-none">
+                            <a href="https://www.instagram.com/bevalassy" class="feed-link btn" target="_blank">
+                                <img src="media/feed.png" alt="follow our feed" class="img img-fluid">
+                            </a>
+                        </div>
+                    </div>  
+                </div> 
             </section>
-
-        </div>
+            </div>
     </main>
     <footer class="footer" id="footer">
         <div class="container">

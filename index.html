@@ -72,6 +72,14 @@
                                         <a href="nail.html" class="sub-menu-link" target="_blank" rel="noopener noreferrer">
                                         Nail Technician</a>
                                     </li>
+                                    <li class="sub-menu-list-item dropdown-item"> 
+                                        <a href="naturalHair.html" class="sub-menu-link" target="_blank" rel="noopener noreferrer">
+                                        Natural Hair Specialist</a>
+                                    </li>
+                                    <li class="sub-menu-list-item dropdown-item"> 
+                                        <a href="instructors.html" class="sub-menu-link" target="_blank" rel="noopener noreferrer">
+                                        Instructors</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-list-item locations">
@@ -125,9 +133,9 @@
                 </div>
                 <div class="offcanvas-body">
                     <section class="section" id="moreInfoForm">
-                        <h2 class="form-h2 text-center mb-5">Learn More</h2>
+                        <h2 class="form-h2 text-center mb-3">Learn More</h2>
                         <div class="row" >
-                            <div class="form-con mt-6 text-center">
+                            <div class="form-con mt-6">
                                 <form id="form" class="form" onSubmit={handleSubmit}>
                                     <div class="mb-3">
                                         <div class="col-auto">
@@ -174,6 +182,22 @@
                                                 required
                                             />
                                         </div>
+                                        <div class="col-auto">
+                                            <label htmlFor="program" class="form-label form-text">choose a program</label>
+                                            <div class="select">
+                                                <select id="programSelect" name="program-select" required>
+                                                    <option>Cosmetology</option>
+                                                    <option>Esthiology</option>
+                                                    <option>Nail Technician</option>
+                                                    <option selected>Undecided</option> 
+                                                  </select>
+                                            </div>
+                                              
+                                        </div>
+                                    </div>
+                                    <div class="consent-text-div">
+                                        <p class="consent-heading">Start your journey with Valassy!</p>
+                                        <p class="consent-text">By clicking the SUBMIT button as my official signature, I expressly consent to Valassy Institute of Cosmetology representatives contacting me via telephone, text, email or prerecorded message using automated telephone technology regarding Valassy Institute of Cosmetology programs, events and announcements. I understand that consent is not required to purchase goods or services from Valassy Institute of Cosmetology and that I may withdraw my consent at any time.</p>
                                     </div>
                                     <div class="mb-3 text-center">
                                         <button type="submit" class="btn text-uppercase learn-more">
