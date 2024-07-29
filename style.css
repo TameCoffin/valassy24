@@ -576,16 +576,30 @@ color: white;
         border: 1px solid hotpink;
         height: 420px;
     }
+    #naturalCostDiv{
+        height: 640px;
+    }
+    #instructorCostDiv{
+        height: 280px;
+    }
     .cost-text{
         font-size: 10px;
     }
 
     .program-text-div{
         margin-top: 100px;
-        border: 1px solid green;
+        /* border: 1px solid green; */
     }
 }
+
+.mobile-heading{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    /* font-size: calc(36px + (38 - 36) * ((100vw - 300px) / (1600 - 300))); */
+}
 .cost-div {
+    height: 570px;
     border: 1px solid hotpink;
     border-radius: 5px;
     box-shadow: 2px 4px #6c3a6e ;
@@ -599,7 +613,7 @@ color: white;
 .cost-text{
     color: black;
     font-family: sans-serif;
-    line-height: .7;
+    line-height: 1;
     font-size: calc(18px + (18 - 18) * ((100vw - 300px) / (1600 - 300)));
 }
 
