@@ -335,7 +335,6 @@ color: white;
 /* apply form */
 .apply-img-div{
     height: 300px;
-    background-image: url(/media/applyimg.jpeg);
     background-repeat: no-repeat;
     /* background-size: 100%; */
     background-size: cover;
@@ -344,7 +343,7 @@ color: white;
 
 @media (min-width: 768px) {
     .apply-img-div{
-        height: 690px;
+        height: 100%;
     }
     
 }
