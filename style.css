@@ -609,7 +609,7 @@ color: white;
     /* font-size: calc(36px + (38 - 36) * ((100vw - 300px) / (1600 - 300))); */
 }
 .cost-div {
-    height: 570px;
+    height: 670px;
     border: 1px solid hotpink;
     border-radius: 5px;
     box-shadow: 2px 4px #6c3a6e ;
