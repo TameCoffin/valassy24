@@ -101,6 +101,11 @@ body{
     line-height: .9;
     color: black;
 }
+@media (max-width: 576px) {
+    .logo-head{
+        margin-top: 50px;
+    }
+}
 
 @media (min-width: 768px){
     .header{
@@ -584,13 +589,6 @@ color: white;
     .cost-div{
         
         border: 1px solid hotpink;
-        height: 420px;
-    }
-    #naturalCostDiv{
-        height: 640px;
-    }
-    #instructorCostDiv{
-        height: 280px;
     }
     .cost-text{
         font-size: 10px;
@@ -598,7 +596,6 @@ color: white;
 
     .program-text-div{
         margin-top: 100px;
-        /* border: 1px solid green; */
     }
 }
 
@@ -606,7 +603,6 @@ color: white;
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
-    /* font-size: calc(36px + (38 - 36) * ((100vw - 300px) / (1600 - 300))); */
 }
 .cost-div {
     height: 670px;
@@ -627,6 +623,9 @@ color: white;
     font-size: calc(18px + (18 - 18) * ((100vw - 300px) / (1600 - 300)));
 }
 
+.work-study{
+    font-weight: 600;
+}
 
 .single1, .single2{
     display:flex;
@@ -642,9 +641,6 @@ color: white;
 
 @media (min-width: 768px) {
     
-    .cos-img{
-        /* padding: 25px; */
-    }
     .right{
         display: block;
     }
@@ -653,9 +649,7 @@ color: white;
         margin-top: 120px;
         font-size: calc(34px + (36 - 34) * ((100vw - 300px) / (1600 - 300)));
     }
-    .program-desc, .program-obj, .program-paths{
-        /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
-    }
+
     .program-text, .path-list-item{
         font-family: sans-serif;
         font-size: calc(18px + (18 - 18) * ((100vw - 300px) / (1600 - 300)));
@@ -727,4 +721,61 @@ color: white;
         margin-right: 110px;
     }
     
+}
+
+/* programs */
+
+#programMain{
+    background-color: #9999992b;
+}
+.programs-heading{
+    border-bottom: 5px solid hotpink;
+    text-transform: uppercase;
+    font-size: calc(40px + (42 - 40) * ((100vw - 300px) / (1600 - 300)));
+    color: black;
+}
+@media (min-width: 576px) {
+    .programs-heaing{
+        text-align: center;
+    }
+   
+}
+
+.photo1{
+    height: 160px;
+    box-shadow: 1px 2px 3px hotpink;
+}
+
+@media (min-width: 992px) {
+    .photo1{
+        height: 400px;
+    }
+    
+}
+
+.end{
+    justify-content: end;
+}
+
+.figure{
+    display: flex;
+}
+
+.sample-subhead{
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--font1);
+    font-size: calc(26px + (28 - 26) * ((100vw - 300px) / (1600 - 300)));
+}
+.caption{
+    color: black;
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.image{
+    border: 2px solid var(--litegreen);
+    margin: 0 auto;
 }
