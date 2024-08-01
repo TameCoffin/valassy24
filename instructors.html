@@ -119,15 +119,15 @@
             <button class="btn learn-more-side rotate-90 fixed d-none d-md-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
                 Learn More
             </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
                 <div class="offcanvas-header">
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <section class="section" id="moreInfoForm">
-                        <h2 class="form-h2 text-center mb-5">Learn More</h2>
+                        <h2 class="form-h2 text-center mb-3">Learn More</h2>
                         <div class="row" >
-                            <div class="form-con mt-6 text-center">
+                            <div class="form-con mt-6">
                                 <form id="form" class="form" onSubmit={handleSubmit}>
                                     <div class="mb-3">
                                         <div class="col-auto">
@@ -174,6 +174,23 @@
                                                 required
                                             />
                                         </div>
+                                        <div class="col-auto">
+                                            <label htmlFor="program" class="form-label form-text">choose a program</label>
+                                            <div class="select">
+                                                <select id="programSelect" name="program-select" required>
+                                                    <option>Cosmetology</option>
+                                                    <option>Esthetician</option>
+                                                    <option>Nail Technician</option>
+                                                    <option>Natural Hair Specialist</option>
+                                                    <option>Instructor</option>
+                                                    <option selected>Undecided</option> 
+                                                  </select>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div class="consent-text-div">
+                                        <p class="consent-heading">Start your journey with Valassy!</p>
+                                        <p class="consent-text">By clicking the SUBMIT button as my official signature, I expressly consent to Valassy Institute of Cosmetology representatives contacting me via telephone, text, email or prerecorded message using automated telephone technology regarding Valassy Institute of Cosmetology programs, events and announcements. I understand that consent is not required to purchase goods or services from Valassy Institute of Cosmetology and that I may withdraw my consent at any time.</p>
                                     </div>
                                     <div class="mb-3 text-center">
                                         <button type="submit" class="btn text-uppercase learn-more">
@@ -187,7 +204,7 @@
                     </section>
                   
                 </div>
-              </div>
+            </div>
             <div class="row">
                 <h1 class="instructor-head">ALREADY A LICENSED COSMETOLOGIST AND  WANT TO TEACH? 
                     CONTACT US TODAY
@@ -317,8 +334,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md footer-nav-div">
-                    <nav class="nav footer-nav d-none d-md-flex" id="footerNav">
-                        <ul class="footer-nav-list-1 col-3">
+                    <nav class="nav footer-nav d-none d-md-flex mt-4" id="footerNav">
+                        <ul class="footer-nav-list-1 col-2">
                             <li class="nav-list-item footer-nav-list-item">
                                     <h5 class="footer-subhead text-uppercase student">
                                         student
@@ -335,7 +352,7 @@
                                 </a>
                             </li>
                             <li class="nav-list-item footer-nav-list-item">
-                                <a href="error.html" class="footer-nav-list-link" target="_blank" rel="noopener noreferrer">
+                                <a href="culture.html" class="footer-nav-list-link" target="_blank" rel="noopener noreferrer">
                                     culture
                                 </a>
                             </li>
@@ -345,7 +362,7 @@
                                 </a>
                             </li>
                             <li class="nav-list-item footer-nav-list-item">
-                                <a href="error.html" class="footer-nav-list-link" target="_blank" rel="noopener noreferrer">
+                                <a href="studentLife.html" class="footer-nav-list-link" target="_blank" rel="noopener noreferrer">
                                     student life
                                 </a>
                             </li>
@@ -380,7 +397,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <ul class="footer-nav-list-2 col-3">
+                        <ul class="footer-nav-list-2 col-2">
                             <li class="nav-list-item footer-nav-list-item">
                                     <h5 class="footer-subhead text-uppercase guest">
                                         guest
@@ -407,7 +424,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <ul class="footer-nav-list-3 col-3">
+                        <ul class="footer-nav-list-3 col-2">
                             <li class="nav-list-item footer-nav-list-item">
                                     <h5 class="footer-subhead text-uppercase help">
                                         help & info
@@ -444,12 +461,30 @@
                                 </a>
                             </li>
                         </ul>
-                        <ul class="footer-nav-list-4 col-3">
-                            <!-- <li class="nav-list-item footer-nav-list-item">
+                        <ul class="footer-nav-list-4 col-2">
+                            <li class="nav-list-item footer-nav-list-item">
                                     <h5 class="footer-subhead text-uppercase social">
                                         social media
                                     </h5>
-                            </li> -->
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    facebook
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    instagram
+                                </a>
+                            </li>
+                            <li class="nav-list-item footer-nav-list-item">
+                                <a href="error.html" class="footer-nav-list-link">
+                                    tiktok
+                                </a>
+                            </li>
+
+                        </ul>
+                        <ul class="footer-nav-list-4 col-3">
                             <li class="nav-list-item footer-nav-list-item">
                                 <div class="follow-feed-div">
                                     <a href="https://www.instagram.com/bevalassy" class="feed-link btn" target="_blank" rel="noopener noreferrer">
@@ -466,7 +501,6 @@
                                         <h5 class="footer-subhead text-uppercase student">
                                             student
                                         </h5>
-                
                                 </li>
                                 <li class="nav-list-item footer-nav-list-item">
                                     <a href="apply.html" class="footer-nav-list-link" target="_blank" rel="noopener noreferrer">
@@ -594,7 +628,7 @@
                     </div>
                 </div>
             </div>
-            <div class="colophon text-center">Website by SemiiJ &copy; 2024</div>
+            <div class="colophon text-center">Valassy Institute of Cosmetology &copy; 2024</div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

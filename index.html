@@ -34,17 +34,61 @@
                         </svg>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item nav-list-link drop-apply-link" href="apply.html"target="_blank" rel="noopener noreferrer">apply online</a></li>
-                      <li><a class="dropdown-item nav-list-link drop-call-admiss-link" href="error.html"target="_blank" rel="noopener noreferrer">call admissions</a></li>
-                      <li><a class="dropdown-item nav-list-link programs-link" href="error.html"target="_blank" rel="noopener noreferrer">programs</a></li>
-                      <li><a class="dropdown-item nav-list-link locations-link" href="error.html"target="_blank" rel="noopener noreferrer">locations</a></li>
-                      <li><a class="dropdown-item nav-list-link culture-link" href="culture.html"target="_blank" rel="noopener noreferrer">culture</a></li>
-                      <li><a class="dropdown-item nav-list-link student-life-link" href="studentLife.html"target="_blank" rel="noopener noreferrer">student life</a></li>
-                      <li><a class="dropdown-item nav-list-link faqs-link" href="error.html"target="_blank" rel="noopener noreferrer">faqs</a></li>
-                      <li><a class="dropdown-item nav-list-link shop-link" href="shop.html"target="_blank" rel="noopener noreferrer">shop</a></li>
-                      <li><a class="dropdown-item nav-list-link programs-link services-link" href="error.html"target="_blank" rel="noopener noreferrer">services</a></li>
-                      <li><a class="dropdown-item nav-list-link locations-link careers-link" href="error.html"target="_blank" rel="noopener noreferrer">careers</a></li>
-                      <li><a class="dropdown-item nav-list-link culture-link sign-in-link" href="error.html"target="_blank" rel="noopener noreferrer">sign in</a></li>
+                        <li>
+                            <a class="dropdown-item nav-list-link drop-apply-link" href="apply.html"target="_blank" rel="noopener noreferrer">apply online</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item nav-list-link drop-call-admiss-link" href="error.html"target="_blank" rel="noopener noreferrer">call admissions</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item nav-list-link btn dropdown-toggle" role="button" data-bs-toggle="dropdown2" aria-expanded="false" target="_blank" rel="noopener noreferrer">programs</a>
+                            <ul class="dropdown-menu" id="sub-menu">
+                                <li class="sub-menu-list-item dropdown-item">
+                                    <a href="cosmetology.html" class="sub-menu-link" target="_blank" rel="noopener noreferrer">
+                                    Cosmetology</a>
+                                </li>
+                                <li class="sub-menu-list-item dropdown-item"> 
+                                    <a href="esthetician.html" class="sub-menu-link" target="_blank" rel="noopener noreferrer">
+                                    Esthetician</a>
+                                </li>
+                                <li class="sub-menu-list-item dropdown-item"> 
+                                    <a href="nail.html" class="sub-menu-link" target="_blank" rel="noopener noreferrer">
+                                    Nail Technician</a>
+                                </li>
+                                <li class="sub-menu-list-item dropdown-item"> 
+                                    <a href="naturalHair.html" class="sub-menu-link" target="_blank" rel="noopener noreferrer">
+                                    Natural Hair Specialist</a>
+                                </li>
+                                <li class="sub-menu-list-item dropdown-item"> 
+                                    <a href="instructors.html" class="sub-menu-link" target="_blank" rel="noopener noreferrer">
+                                    Instructors</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item nav-list-link locations-link" href="error.html"target="_blank" rel="noopener noreferrer">locations</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item nav-list-link culture-link" href="culture.html"target="_blank" rel="noopener noreferrer">culture</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item nav-list-link student-life-link" href="studentLife.html"target="_blank" rel="noopener noreferrer">student life</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item nav-list-link faqs-link" href="error.html"target="_blank" rel="noopener noreferrer">faqs</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item nav-list-link shop-link" href="shop.html"target="_blank" rel="noopener noreferrer">shop</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item nav-list-link programs-link services-link" href="error.html"target="_blank" rel="noopener noreferrer">services</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item nav-list-link locations-link careers-link" href="error.html"target="_blank" rel="noopener noreferrer">careers</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item nav-list-link culture-link sign-in-link" href="error.html"target="_blank" rel="noopener noreferrer">sign in</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="d-none d-md-flex col-md-3 col-xxl-6 mt-2">
@@ -127,7 +171,7 @@
             <button class="btn learn-more-side rotate-90 fixed d-none d-md-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
                 Learn More
             </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
                 <div class="offcanvas-header">
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
@@ -187,12 +231,13 @@
                                             <div class="select">
                                                 <select id="programSelect" name="program-select" required>
                                                     <option>Cosmetology</option>
-                                                    <option>Esthiology</option>
+                                                    <option>Esthetician</option>
                                                     <option>Nail Technician</option>
+                                                    <option>Natural Hair Specialist</option>
+                                                    <option>Instructor</option>
                                                     <option selected>Undecided</option> 
                                                   </select>
-                                            </div>
-                                              
+                                            </div>  
                                         </div>
                                     </div>
                                     <div class="consent-text-div">
@@ -211,7 +256,7 @@
                     </section>
                   
                 </div>
-              </div>
+            </div>
             <button class="learn-more-side rotate-90 fixed-left text-capitalize d-none d-md-block btn">live chat</button>
             <section class="section d-none d-md-flex" id="banner">
                 <img src="media/Valassybanner2.jpg" alt="Valassy banner image" class="img-fluid image banner">
@@ -249,7 +294,7 @@
                     <div class="row cspf d-block d-md-flex mx-auto" id="cspfItems">
                         <div class="col culture-div">
                             <figure class="figure culture" id="culture-figure">
-                                <a href="error.html" class="culture-link" target="_blank" rel="noopener noreferrer">
+                                <a href="culture.html" class="culture-link" target="_blank" rel="noopener noreferrer">
                                     <img src="media/culture.png" width="300" alt="placeholder" class="img-fluid image">
                                     <figcaption class="figcaption culture-caption">
                                         culture
@@ -259,7 +304,7 @@
                         </div>
                         <div class="col student-life-div">
                             <figure class="figure student-life" id="student-life-figure">
-                                <a href="error.html" class="student-life-link" target="_blank" rel="noopener noreferrer">
+                                <a href="studentLife.html" class="student-life-link" target="_blank" rel="noopener noreferrer">
                                     <img src="media/3.png" width="300" alt="placeholder" class="img-fluid image">
                                     <figcaption class="figcaption student-life-caption">
                                         student life
@@ -269,7 +314,7 @@
                         </div>
                         <div class="col programs-div">
                             <figure class="figure programs" id="programs-figure">
-                                <a href="error.html" class="programs-link" target="_blank" rel="noopener noreferrer">
+                                <a href="programs.html" class="programs-link" target="_blank" rel="noopener noreferrer">
                                     <img src="media/4.png" width="300" alt="placeholder" class="img-fluid image">
                                     <figcaption class="figcaption programs-caption">
                                         programs
@@ -511,11 +556,6 @@
 
                         </ul>
                         <ul class="footer-nav-list-4 col-3">
-                            <!-- <li class="nav-list-item footer-nav-list-item">
-                                    <h5 class="footer-subhead text-uppercase social">
-                                        social media
-                                    </h5>
-                            </li> -->
                             <li class="nav-list-item footer-nav-list-item">
                                 <div class="follow-feed-div">
                                     <a href="https://www.instagram.com/bevalassy" class="feed-link btn" target="_blank" rel="noopener noreferrer">
@@ -532,7 +572,6 @@
                                         <h5 class="footer-subhead text-uppercase student">
                                             student
                                         </h5>
-                
                                 </li>
                                 <li class="nav-list-item footer-nav-list-item">
                                     <a href="apply.html" class="footer-nav-list-link" target="_blank" rel="noopener noreferrer">
@@ -660,7 +699,7 @@
                     </div>
                 </div>
             </div>
-            <div class="colophon text-center">Website by SemiiJ &copy; 2024</div>
+            <div class="colophon text-center">Valassy Institute of Cosmetology &copy; 2024</div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
