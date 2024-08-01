@@ -101,11 +101,8 @@ body{
     line-height: .9;
     color: black;
 }
-@media (max-width: 576px) {
-    .logo-head{
-        margin-top: 50px;
-    }
-}
+
+
 
 @media (min-width: 768px){
     .header{
